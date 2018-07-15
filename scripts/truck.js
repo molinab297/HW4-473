@@ -19,7 +19,6 @@
 
   Truck.prototype.printOrders = function () {
     var customerIdArray = Object.keys(this.db.getAll());
-
     console.log("Truck #" + this.truckId + " has pending orders:");
     customerIdArray.forEach(function (id) {
       console.log(this.db.get(id));
